@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>JireBot - Recuperar Senha</title>
+</head>
+<body>
+    <div class="container">
+        
+        <h2>Recuperar Senha</h2>
+
+        <form action="/recuperar-senha" method="POST">
+                
+                <p>Digite o e-mail da sua conta para receber o link de redefinição.</p>
+
+                <div class="campo">
+                    <label for="email">E-mail Cadastrado:</label>
+                    <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+                </div>
+
+            <button type="submit">Enviar Link de Recuperação</button>
+            
+        </form>
+
+        <p><a href="/">Voltar para o Login</a></p>
+        
+    </div>
+</body>
+</html>

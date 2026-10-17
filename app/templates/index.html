@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    
+    <title>Jirebot</title>
+</head>
+<body>
+
+	<header class="topo">
+   		
+   		<img class="img" style="width: 80px; height: auto;" src="static/img/logo.png" alt="Logo do Jirebot">
+   		<h1><span class="destaque">Jirebot</span></h1>
+    </header>
+
+	<form action="/login" method="POST">
+	  <!-- Campo de E-mail -->
+	  <div>
+	    <label for="email">E-mail:</label>
+	    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+	  </div>
+	
+	  <!-- Campo de Senha -->
+	  <div>
+	    <label for="senha">Senha:</label>
+	    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+	  </div>
+	
+	  <!-- Link Esqueci a Senha -->
+	
+	  <!-- Botão de Enviar (Entrar) -->
+	  <button type="submit">Entrar</button>
+	  
+		<!-- Link Esqueci a Senha -->
+	  <div class="esqueci">
+        <p>Esqueceu a Senha? <a href="/recuperar">Recuperar senha</a></p>
+      </div>
+      
+	  <!-- Link para Cadastro -->
+	  <div>
+	    <p>Não tem uma conta? <a href="/cadastro">Cadastre-se aqui</a></p>
+	  </div>
+	</form>
+	
+</body>
+</html>

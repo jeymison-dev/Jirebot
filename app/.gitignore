@@ -1,0 +1,5 @@
+../.env
+../jirebot.db
+.env
+jirebot.db
+__pycache__/

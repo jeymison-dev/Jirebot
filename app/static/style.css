@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Centraliza tudo na tela */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilo do título Jirebot */
+.logo-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #00ffff; /* Um tom ciano/azul neon opcional para destacar */
+}
+
+/* O quadro tradicional de login */
+.login-card {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 360px;
+    text-align: center;
+}
+
+.login-card h2 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* Inputs bonitos e organizados */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #262626;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+/* Botão destacado */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00ffff;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Links legíveis contra o fundo escuro */
+.login-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.login-links a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+/* Muda a cor de todos os links da página */
+a {
+    color: #00ffff; /* Usa o mesmo neon do botão */
+    text-decoration: none;
+}
+
+/* Muda a cor quando passa o dedo/mouse por cima */
+a:hover {
+    color: #ffffff; /* Fica branco */
+    text-decoration: underline;
+}
+
+/* Container dos links na parte inferior */
+.login-links a {
+    margin-top: 25px; /* Empurra os links bem para baixo do botão */
+    display: flex;
+    flex-direction: column; /* Coloca um link embaixo do outro */
+    gap: 12px; /* Cria uma distância segura entre os dois links */
+    text-align: center;
+}
+
+.esqueci{
+	display: block;
+	text-align: center;
+	margin-top: 15px;    /* Cria o espaço que você quer abaixo do botão Entrar */
+	margin-bottom: 12px; 
+}
+
+.top img{
+	display: flex;
+	margin: 0;
+	width: 180px;
+	justify-content: center;
+	gap: 0.1rem;
+}
+
+.topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centraliza a logo e o texto juntos no meio da tela */
+    align-items: center;     /* Alinha os dois verticalmente no meio */
+    gap: 0;               /* Cria o espaçamento perfeito entre a logo e o texto */
+    margin-top: 20px;        /* Mantém o seu espaçamento amigável no topo */
+    width: 100%;             /* Garante que o topo ocupe a tela inteira para poder centralizar */
+}
+
+/* Remova os flex das classes internas para não dar conflito */
+.topo h1 {
+    margin: 0;               /* Remove margens padrão que jogam o texto para baixo */
+	font-size: 2.5rem;
+	gap: 1px;
+}
